@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         addButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                String amount = number.toString();
+                String amount = number.getText().toString();
                 String[] epic = amount.split(" ");
                 int sum = 0;
                 for (String num:epic){
